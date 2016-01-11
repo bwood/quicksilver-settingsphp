@@ -1,0 +1,13 @@
+api_version: 1
+
+workflows:
+  sync_code:
+      before:
+        - type: webphp
+          description:  Preserve current settings.php
+          script: private/backup_settings.php
+      after:
+        - type: webphp
+          description: Restore settings.php
+          script: private/restore_settings.php
+
