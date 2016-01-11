@@ -23,3 +23,4 @@ This enables the following smooth process for cutting existing sites over to the
 * Any new site we spin up will have the latest settings.php code.
 * Existing sites will continue using their existing settings.php code until they can be manually cutover to the new code. (A gitignored config file needs to be created for these sites.)
 
+[Here's an issue for discussion of the big flaw with this plan](https://github.com/bwood/quicksilver-settingsphp/issues/1).
