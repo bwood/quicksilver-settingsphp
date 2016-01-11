@@ -24,3 +24,13 @@ This enables the following smooth process for cutting existing sites over to the
 * Existing sites will continue using their existing settings.php code until they can be manually cutover to the new code. (A gitignored config file needs to be created for these sites.)
 
 [Here's an issue for discussion of the big flaw with this plan](https://github.com/bwood/quicksilver-settingsphp/issues/1).
+
+### Manual cutover of existing sites
+
+FYI, here's how sites that were spun up before this code was added would be
+cutover to use this code:
+
+1. The new settings.php will be
+copied, commited and pushed to the individual site repository. This file will be identical to the
+current settings.php in the upstream repo.
+2. The site's pantheon.yml will be removed thereby disabling Quicksilver. The next time updates are applied, we will not see conflicts related settings.php.
