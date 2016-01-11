@@ -33,4 +33,4 @@ cutover to use this code:
 1. The new settings.php will be
 copied, commited and pushed to the individual site repository. This file will be identical to the
 current settings.php in the upstream repo.
-2. The site's pantheon.yml will be removed thereby disabling Quicksilver. The next time updates are applied, we will not see conflicts related settings.php.
+2. The site's pantheon.yml will be removed thereby disabling Quicksilver. The next time updates are applied, we will not see conflicts related to settings.php.
