@@ -1,6 +1,6 @@
 # quicksilver-settingsphp
 ## Use Case
-In our repository we commited sites/default/settings.php and then in a subsequent commit we added this fire to .gitignore.  The result is that when we spin-up
+In our repository we commited sites/default/settings.php and then in a subsequent commit we added this file to .gitignore.  The result is that when we spin-up
 a new Pantheon site from our upstream we get our version-controlled settings.php containing our domain-normalization code template.  The site builder can then
 commit the custom domain normalization code needed for the site without causing git conflicts when we apply updates in the future.
  
