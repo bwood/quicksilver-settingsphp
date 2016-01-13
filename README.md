@@ -15,7 +15,7 @@ customized settings.php file using `sync_code: before` and then restore the cust
 * The site has a customizationations to the settings.php that was originally commited to the upstream repo.
 * We apply updates with "Auto resolve conflicts" (-Xtheirs) checked.
 * The backup_settings.php script gets triggered by `sync_code: before` and the customized settings.php is backed up to a safe, temporary location.
-* The git merge overwrites the site's customized settigns.php
+* The git merge overwrites the site's customized settings.php
 * The restore_settings.php script gets triggered by `sync_code: after` and the customized settings.php is restored, overwriting the new file that was merged from the upstream repository.
 
 This enables the following smooth process for cutting existing sites over to the new settings.php code:
